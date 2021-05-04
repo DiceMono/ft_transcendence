@@ -12,7 +12,7 @@ RUN adduser --disabled-password --gecos "" hyeyoo \
         && echo 'hyeyoo:hyeyoo' | chpasswd \
         && adduser hyeyoo sudo \
         && echo 'hyeyoo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-USER hyeyoo
+USER ${USER:-hyeyoo}
 # install nvm & etc
 ENV NVM_DIR /home/hyeyoo/.nvm
 ENV NODE_VERSION=14.16.0
