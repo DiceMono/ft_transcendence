@@ -1,1 +1,211 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add-chatroom-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="add-chatroom-modal-title"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="add-chatroom-modal-title">Add ChatRoom</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="row form-group col-12">
+              <label class="col-3 col-form-label" for="add-chatroom-name"
+                >name</label
+              >
+              <input
+                class="col-9 form-control"
+                type="email"
+                class="form-control"
+                id="add-chatroom-name"
+                placeholder="name"
+              />
+            </div>
+            <div class="row form-group col-12">
+              <div class="col-3"></div>
+              <div class="col-3 custom-checkbox p-0">
+                <input
+                  type="checkbox"
+                  id="add-chatroom-is-private"
+                  value="private room"
+                />
+                <label
+                  for="add-chatroom-is-private"
+                  style="
+                    margin: 0;
+                    padding: 0 10px;
+                    height: 38px;
+                    line-height: 38px;
+                  "
+                  >private room</label
+                >
+              </div>
+              <div class="row m-0 p-0 col-6 form-group">
+                <label class="col-3 col-form-label" for="password">pass</label>
+                <input
+                  class="col-9 form-control"
+                  type="text"
+                  id="add-chatroom-password"
+                  placeholder="password"
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary close-button"
+          data-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-primary create-button">
+          Create
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OkModalView -->
+<div
+  class="modal fade"
+  id="ok-modal-view"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="ok-modal-view-title"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ok-modal-view-title">Title Here</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">Text Here</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">
+          Ok
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ErrorModalView -->
+<div
+  class="modal fade"
+  id="error-modal-view"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="error-modal-view-title"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/error-icon.png" width="50" height="50" />
+        <h5
+          class="modal-title"
+          id="error-modal-view-title"
+          style="line-height: 50px; margin-left: 5px"
+        >
+          <div class="modal-title"></div>
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">Text Here</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">
+          Ok
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- InputPasswordModalView -->
+<div
+  class="modal fade"
+  id="input-password-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="input-password-modal-title"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="input-password-modal-title">
+          This chatroom is protected by password
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+            <label for="chatroom-password" class="col-form-label col-3"
+              >password:
+            </label>
+            <input
+              class="form-control col-6"
+              id="chatroom-password"
+              type="password"
+              name="chatroom-password"
+              placeholder="chatroom password"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="enter-button btn btn-primary"
+          data-dismiss="modal"
+        >
+          Enter
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="content"></div>
